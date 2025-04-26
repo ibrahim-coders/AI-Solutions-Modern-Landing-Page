@@ -1,12 +1,34 @@
-# React + Vite
+🚀 AI Solutions — Modern Landing Page A modern, responsive landing page for AI
+solutions, built with React.js, Tailwind CSS, Framer Motion, and React Hot
+Toast. Includes a working Contact Form powered by Email.js for real-time
+inquiries.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br/>
+🌐 Live Website:
+Live Demo
 
-Currently, two official plugins are available:
+<br/>
+✨ Features:
+Beautiful hero section with animated team and service images (Framer Motion)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Fully responsive across all devices (Tailwind CSS)
 
-## Expanding the ESLint configuration
+Contact form integration with Email.js for instant emails
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Smooth animations and transitions
+
+Toast notifications using React Hot Toast
+
+Clean, reusable, and scalable component structure
+
+<br/>
+⚡ Tech Stack:
+React.js
+
+Tailwind CSS
+
+Framer Motion
+
+React Hot Toast
+
+Email.js

@@ -8,73 +8,114 @@ import hero3 from '../assets/hero3.avif';
 import hero4 from '../assets/hero4.avif';
 import hero5 from '../assets/hero5.avif';
 import hero6 from '../assets/hero6.avif';
-import { motion } from 'framer-motion';
-
+import { motion } from 'motion/react';
 const Hero = () => {
   return (
-    <section>
-      <div className="container mx-auto flex flex-wrap min-h-screen items-center  bg-emerald-950 text-orange-50">
-        {/* Left Side */}
-        <div className="w-full p-8 md:w-1/2 ">
-          <div className="mb-4 flex space-x-2">
-            {[profileImg1, profileImg2, profileImg3].map((img, idx) => (
-              <motion.img
-                key={idx}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: idx * 0.2 }}
-                src={img}
-                alt={`Team Member ${idx + 1}`}
-                className="h-16 w-16 rounded-full border-2 border-orange-50"
-              />
-            ))}
-          </div>
-
-          <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-4xl tracking-tighter md:text-5xl lg:text-7xl"
-          >
-            Transform Your Business With{' '}
-            <span className="text-orange-500">AI Solutions</span>
-          </motion.h1>
-
-          <p className="mt-3 text-base text-white sm:text-lg">
-            Leverage the power of artificial intelligence to streamline your
-            operations, boost productivity, and drive innovation across your
-            organization.
-          </p>
-
-          <motion.button
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="mt-8 flex items-center gap-2 rounded-full bg-emerald-900 px-6 py-3 hover:bg-emerald-800"
-          >
-            <span>Explore Our Work</span>
-            <IoArrowForward />
-          </motion.button>
+    <section className="container mx-auto flex pt-16 flex-wrap items-center bg-emerald-950 text-orange-50 sm:mt-10">
+      <div className="w-full pt-10 px-4 sm:p-8 md:w-1/2">
+        <div className="mb-4 flex space-x-2">
+          <motion.img
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            src={profileImg1}
+            alt="Team Member 1"
+            className=" h-16 w-16 rounded-full border-2 border-orange-50"
+          />
+          <motion.img
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            src={profileImg2}
+            alt="Team Member 1"
+            className=" h-16 w-16 rounded-full border-2 border-orange-50"
+          />
+          <motion.img
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            src={profileImg3}
+            alt="Team Member 1"
+            className=" h-16 w-16 rounded-full border-2 border-orange-50"
+          />
         </div>
-
-        {/* Right Side */}
-        <div className="w-full md:w-1/2 p-8 flex justify-center">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {[hero1, hero2, hero3, hero4, hero5, hero6].map((img, idx) => (
-              <motion.img
-                key={idx}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: idx * 0.1 }}
-                src={img}
-                alt={`Hero ${idx + 1}`}
-                className={`w-32 h-44 md:w-40 md:h-56 object-cover rounded-lg transform ${
-                  idx % 2 === 0 ? 'rotate-3' : '-rotate-3'
-                }`}
-              />
-            ))}
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="text-4xl tracking-tighter md:text-5xl lg:text-7xl"
+        >
+          Transform Your Business With
+          <span className="text-orange-500"> AI Solutions</span>
+        </motion.h1>
+        {/* <p className="text-base text-white mt-3 sm:text-lg">
+          Leverage the power of artificial intelligence to streamline your
+          operations, boost productivity, and drive innovation across your
+          organization.
+        </p> */}
+        <motion.button
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="mt-8 flex items-center gap-2 rounded-full bg-emerald-900 px-4 py-3 hover:bg-emerald-800"
+        >
+          <span>Explore Our Work</span>
+          <IoArrowForward />
+        </motion.button>
+      </div>
+      <div className="w-full md:w-1/2 lg:p-8">
+        <section class=" bg-emerald-950 flex items-center justify-center px-4 py-10 sm:p-10">
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <motion.img
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              src={hero1}
+              class="w-48 h-52 object-cover rounded-lg transform rotate-6"
+              alt="Image 1"
+            />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              src={hero2}
+              class="w-48 h-52 object-cover rounded-lg transform -rotate-3"
+              alt="Image 2"
+            />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              src={hero3}
+              class="w-48 h-52 object-cover rounded-lg transform rotate-2"
+              alt="Image 3"
+            />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              src={hero4}
+              class="w-48 h-52 object-cover rounded-lg transform -rotate-2"
+              alt="Image 4"
+            />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              src={hero5}
+              class="w-48 h-52 object-cover rounded-lg transform rotate-3"
+              alt="Image 5"
+            />
+            <motion.img
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              src={hero6}
+              class="w-48 h-52 object-cover rounded-lg transform -rotate-6"
+              alt="Image 6"
+            />
           </div>
-        </div>
+        </section>
       </div>
     </section>
   );
