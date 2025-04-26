@@ -1,34 +1,23 @@
-🚀 AI Solutions — Modern Landing Page A modern, responsive landing page for AI
-solutions, built with React.js, Tailwind CSS, Framer Motion, and React Hot
-Toast. Includes a working Contact Form powered by Email.js for real-time
-inquiries.
+# AI Solutions — Modern Landing Page
 
-<br/>
-🌐 Live Website:
-Live Demo
+A separate project showcasing a modern, responsive landing page for AI solutions.
 
-<br/>
-✨ Features:
-Beautiful hero section with animated team and service images (Framer Motion)
+🌐 **Live Website:** [Live Demo](https://ai-solutions-henna.vercel.app)
 
-Fully responsive across all devices (Tailwind CSS)
+## ✨ Features
 
-Contact form integration with Email.js for instant emails
+- Beautiful hero section with animated team and service images (Framer Motion)
+- Fully responsive across all devices (Tailwind CSS)
+- Contact form integration with Email.js for instant emails
+- Smooth animations and transitions
+- Toast notifications using React Hot Toast
+- Clean, reusable, and scalable component structure
 
-Smooth animations and transitions
+## ⚡ Tech Stack
 
-Toast notifications using React Hot Toast
+- React.js
+- Tailwind CSS
+- Framer Motion
+- React Hot Toast
+- Email.js
 
-Clean, reusable, and scalable component structure
-
-<br/>
-⚡ Tech Stack:
-React.js
-
-Tailwind CSS
-
-Framer Motion
-
-React Hot Toast
-
-Email.js
